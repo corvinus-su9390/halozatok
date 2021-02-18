@@ -30,13 +30,13 @@ namespace HajosTeszt
             app.UseStaticFiles();
             app.UseRouting();
 
-            /*app.UseEndpoints(endpoints =>
+            app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Hello World!");
+                    //await context.Response.WriteAsync("Hello World!");
                 });
-            });*/
+            });
         }
     }
 }
