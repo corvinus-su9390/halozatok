@@ -1,0 +1,22 @@
+﻿body {
+    background-color:aliceblue;
+}
+h1, h2 {
+    color: indianred;
+    text-align:center;
+}
+
+p {
+    border: 3px solid blue;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+span.fehér {
+    color:white;
+    background-color:black;
+    font-style:italic;
+}
+div.testvérek {
+    color: darkslateblue;
+}
