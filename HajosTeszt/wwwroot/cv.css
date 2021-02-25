@@ -6,7 +6,7 @@ h1, h2 {
     text-align:center;
 }
 
-p {
+#könyv{
     border: 3px solid blue;
     border-radius: 30px;
     padding: 20px;
