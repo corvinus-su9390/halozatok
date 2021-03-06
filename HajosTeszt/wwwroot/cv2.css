@@ -1,0 +1,92 @@
+﻿
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: bold;
+    text-align: center;
+}
+
+#header {
+    background-color: tomato;
+    padding: 20px;
+}
+
+
+#nav a {
+    flex: 1 1 auto;
+    text-decoration: none;
+    color: black;
+}
+
+#nav {
+    background: deepskyblue;
+    padding: 20px;
+}
+
+#article {
+    text-align: left;
+    background: gold;
+    padding: 20px;
+    display: flex;
+}
+
+#aside {
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+#footer {
+    background: hotpink;
+    padding: 20px;
+}
+a:hover {
+    color: antiquewhite;
+    background-color: darkmagenta;
+}
+span.fehér {
+    color: white;
+    background-color: black;
+    font-style: italic;
+}
+div.testvérek {
+    color: darkslateblue;
+}
+h1, h2 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+#könyv {
+    border: 3px solid blue;
+    border-radius: 30px;
+    padding: 20px;
+}
+@media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    #main {
+        display: flex;
+    }
+
+    #nav,
+    #header {
+        order: -1;
+    }
+
+    #article {
+        flex: 1 1 80%;
+    }
+
+    #aside {
+        flex: 1 2 20%;
+    }
+}
