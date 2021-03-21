@@ -1,0 +1,21 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+#here {
+    display: inline-block;
+    /* background: linear-gradient(to bottom, white, red); */
+}
+
+.row {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
