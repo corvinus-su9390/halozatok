@@ -1,35 +1,39 @@
 ﻿using HajosTeszt.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-/*namespace HajosTeszt.Controllers
+namespace HajosTeszt.Controllers
 {
-
+   
     [ApiController]
-    public class BoatController : ControllerBase
+    public class QuestionController : ControllerBase
     {
         [HttpGet]
-        [Route("questions/{sorszám}")]
-        public ActionResult M1()
+        [Route("questions/count")]
+        public int N1()
         {
             HajostesztContext context = new HajostesztContext();
-            var kérdések = from x in context.Questions select x.QuestionText;
+            int kérdésekSzáma = context.Questions.Count();
+            return kérdésekSzáma;
+        }
+        
+        [HttpGet]
+        [Route("questions/{sorszám}")]
 
-            return new JsonResult(kérdések);
-        }*/
-        /*public ActionResult M2(int sorszám)
+        public ActionResult N2(int sorszám)
         {
             HajostesztContext context = new HajostesztContext();
             var kérdés = (from x in context.Questions
                           where x.QuestionId == sorszám
                           select x).FirstOrDefault();
 
-            if (kérdés == null) return BadRequest("Nincs ilyen sorszámú kérdés");
-
+            if (kérdés == null) return BadRequest("Nincs ilyen kérdés!");
             return new JsonResult(kérdés);
+
         }
     }
-    }*/
+}
